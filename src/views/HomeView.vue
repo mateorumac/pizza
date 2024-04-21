@@ -3,34 +3,39 @@
     <div class="container-xl text-center">
       <h1>Welcome to Pizzeria Jupiter</h1>
       <p class="hero-text">Delicious Pizza Made with Love</p>
-      <button class="btn btn-primary">View Menu</button>
+      <router-link to="/menu">
+        <button class="btn-primary"><b>View Menu</b></button>
+      </router-link>
     </div>
   </section>
 
   <section class="news">
       <div class="container">
+        <!-- Title -->
+        <h2 class="news-title text-center mb-4" style="margin-top: -50px;">Latest News </h2> &nbsp;
+
         <div class="row">
           <!-- First News Container -->
           <div class="col-md-4">
             <div class="news-item">
-              <img src="/path/to/news1.jpg" alt="News 1" class="news-image">
-              <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor fringilla massa, in efficitur purus commodo et.</p>
+              <img src="../assets/news1.jpg" alt="News 1" class="news-image">
+              <p class="news-text">EVERY WEDNESDAY we have 2️⃣0️⃣% DISCOUNT on all PIZZAS</p>
             </div>
           </div>
 
           <!-- Second News Container -->
           <div class="col-md-4">
             <div class="news-item">
-              <img src="/path/to/news2.jpg" alt="News 2" class="news-image">
-              <p class="news-text">Sed commodo metus ut magna vehicula, nec pharetra elit consectetur. Nam vel commodo libero.</p>
+              <img src="../assets/news2.jpg" alt="News 2" class="news-image">
+              <p class="news-text">Which do you choose, a regular burger or a burger stuffed with cheese?</p>
             </div>
           </div>
 
           <!-- Third News Container -->
           <div class="col-md-4">
             <div class="news-item">
-              <img src="/path/to/news3.jpg" alt="News 3" class="news-image">
-              <p class="news-text">Proin vel libero eget odio aliquam convallis. Nam rhoncus massa non augue consequat, ac gravida risus condimentum.</p>
+              <img src="../assets/news3.jpg" alt="News 3" class="news-image">
+              <p class="news-text">One of the favorites - Istrian steak with white mushroom sauce</p>
             </div>
           </div>
         </div>
@@ -46,11 +51,14 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 .hero {
-  background-image: url('/src/assets/pizza.jpg'); /* Adjust the path to your image */
+  background-image: url('/src/assets/pizza.jpg'); 
   background-size: cover;
   color: #fff;
-  padding: 200px 0; /* Increase top and bottom padding for increased height */
+  padding: 200px 0; 
 }
 
 .container-xl {
@@ -65,28 +73,53 @@ h1 {
 .hero-text {
   font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto', sans-serif; 
+
 }
 
 .news {
-  background-color: #f7f7f7;
-  padding: 50px 0;
+  background-color: #343a40;
+  color: #fff; 
+  padding: 100px 0; 
 }
 
-.news-item {
-  text-align: center;
-  margin-bottom: 30px;
+.news-title {
+  font-size: 2.5rem; 
+  font-family: 'Roboto', sans-serif; 
+
 }
 
 .news-image {
   width: 100%;
-  max-width: 300px;
-  height: auto;
+  transition: transform 0.3s ease-in-out;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
+}
+
+.news-image:hover {
+  transform: scale(1.1); 
 }
 
 .news-text {
   font-size: 16px;
   margin-top: 15px;
+  font-family: 'Roboto', sans-serif; 
+
 }
 
+.btn-primary {
+  background-color: #fddb3a; 
+  color: #343a40; 
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffbf00; 
+}
 </style>
