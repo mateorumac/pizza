@@ -5,13 +5,11 @@
         <img src="../assets/jupiter.png" alt="Logo" class="navbar-logo">
         <span class="navbar-text navbar-title">Pizzeria Jupiter</span>
       </router-link>
-
-      <!-- Move the collapse button to the end -->
+     
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Move the collapse content after the button -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
