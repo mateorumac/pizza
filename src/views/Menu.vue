@@ -33,12 +33,12 @@
 .menu-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap; 
 }
 
 .menu-item {
   width: 48%; 
-  height: auto; /* Auto height to fit content */
+  height: auto; 
   background-color: #fff; 
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -52,11 +52,11 @@
   border-radius: 10px;
 }
 
-/* Media query for smaller screens */
+
 @media screen and (max-width: 768px) {
   .menu-item {
-    width: 100%; /* Set width to 100% for full width on smaller screens */
-    margin-bottom: 20px; /* Add margin between menu items */
+    width: 100%; 
+    margin-bottom: 20px; 
   }
   body {
   overflow-x: hidden;

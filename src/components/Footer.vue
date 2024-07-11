@@ -28,7 +28,7 @@
         
         <!-- Copyright Notice -->
         <div class="col-md-4">
-          <h5>&copy; 2024 Pizzeria Jupiter</h5>
+          <h5>&copy; 2024 Mateo Rumac</h5>
           <p class="footp">All rights reserved.</p>
         </div>
       </div>
