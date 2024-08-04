@@ -84,6 +84,15 @@ export default {
   margin-left: auto;
 }
 
+@media (max-width: 767px) {
+  .navbar-title {
+    margin-left: 15px;
+    font-size: 1.9rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-title {
     margin-left: 13px;
