@@ -5,10 +5,10 @@
       <div class="menu-container">
         <div class="menu-item">
           <img src="../assets/menu1.jpg" alt="Image 1">
-        </div> <!-- First container -->
+        </div>
         <div class="menu-item">
           <img src="../assets/menu2.jpg" alt="Image 2">
-        </div> <!-- Second container -->
+        </div>
       </div>
     </div>
   </section>
@@ -19,12 +19,12 @@
 
 .menu {
   background-color: #343a40; 
-  padding: 50px 0;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .menu-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   color: #fff; 
   font-family: 'Roboto', sans-serif;
@@ -34,11 +34,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; 
+  gap: 20px; 
 }
 
 .menu-item {
-  width: 48%; 
-  height: auto; 
+  flex: 1 1 calc(50% - 20px);
   background-color: #fff; 
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -47,19 +47,18 @@
 
 .menu-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
-
 @media screen and (max-width: 768px) {
   .menu-item {
-    width: 100%; 
+    flex: 1 1 100%; 
     margin-bottom: 20px; 
   }
   body {
-  overflow-x: hidden;
-}
+    overflow-x: hidden;
+  }
 }
 </style>

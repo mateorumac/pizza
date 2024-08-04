@@ -1,24 +1,25 @@
 <template>
-  <div>
+  <div class="body">
     <section class="hero-about">
       <div class="hero-image-about"></div>
     </section>
     <section class="main-content-about" style="background-color: #343a40;">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <br>
             <h2 class="section-title">About Us</h2> <br>
             <p class="section-text">
               Even after 25 years of work, we do not leave our guests indifferent.<br>
               <br>In addition to a large selection of pizzas, we also offer different <br> types of dishes - something for everyone. <br>
-              <br>Someone will find themselves in pizza or pasta, someone in the <br> charcoal grill,  and we always have sweet surprises for those <br> with a sweet tooth.
+              <br>Someone will find themselves in pizza or pasta, someone in the <br> charcoal grill, and we always have sweet surprises for those <br> with a sweet tooth.
               <br><br> So, come and enjoy with us!
-            </p><p class="services">SERVICES: Meal in restaurant - Sitting on the terrace -  Curbside pickup</p>
+            </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <img src="../assets/abtus.jpg" alt="About Image" class="about-image">
           </div>
+          <p class="services">SERVICES: Meal in restaurant - Sitting on the terrace - Curbside pickup</p>
         </div>
       </div>
     </section>
@@ -27,7 +28,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
@@ -35,7 +36,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 .container {
-  max-width: 1400px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -43,8 +44,9 @@ export default {
 .hero-about {
   position: relative;
   color: #fff;
-  padding: 300px 0; 
+  padding: 200px 20px; 
   overflow: hidden;
+  text-align: center;
 }
 
 .hero-image-about {
@@ -69,12 +71,12 @@ export default {
 }
 
 .main-content-about {
-  padding: 50px 0; 
+  padding: 50px 15px; 
   margin-bottom: 0; 
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Roboto', sans-serif;
@@ -82,7 +84,7 @@ export default {
 
 .section-text {
   color: rgba(255, 255, 255, 0.7); 
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 20px; 
   font-family: 'Roboto', sans-serif;
 }
@@ -101,10 +103,43 @@ export default {
   font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  .services {
-    margin-bottom: 10px; 
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-text {
+    font-size: 1.4rem;
+  }
+
+  .hero-about {
+    padding: 300px 0;
+  }
+  .about-image {
+    margin-left: 30px;  /* Example value for tablet */
+    margin-top: 50px;   /* Example value for tablet */
+  }
+
+}
+
+/* Desktop view */
+@media (min-width: 1024px) {
+  .about-image {
+    margin-left: 60px;
+    margin-top: 110px;
   }
 }
 
+/* Mobile view */
+@media (max-width: 767px) {
+
+  .about-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .body{
+    overflow-x: hidden;
+  }
+}
 </style>

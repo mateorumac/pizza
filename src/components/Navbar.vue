@@ -1,17 +1,17 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-xl d-flex justify-content-between align-items-center">
-      <router-link to="/" class="navbar-brand">
+      <router-link to="/" class="navbar-brand d-flex align-items-center">
         <img src="../assets/jupiter.png" alt="Logo" class="navbar-logo">
         <span class="navbar-text navbar-title">Pizzeria Jupiter</span>
       </router-link>
-     
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <router-link to="/about" class="nav-link">About</router-link>
           </li>
@@ -50,8 +50,7 @@ export default {
 }
 
 .navbar-title {
-  margin-left: 1.5rem;
-  font-size: 2rem; 
+  font-size: 1.5rem; 
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: yellow; 
@@ -83,5 +82,14 @@ export default {
 
 .navbar-nav {
   margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .navbar-title {
+    margin-left: 13px;
+    font-size: 1.9rem;
+    text-align: center;
+    width: 100%;
+  }
 }
 </style>
