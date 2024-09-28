@@ -116,8 +116,8 @@ export default {
     padding: 300px 0;
   }
   .about-image {
-    margin-left: 30px;  /* Example value for tablet */
-    margin-top: 50px;   /* Example value for tablet */
+    margin-left: 30px;  
+    margin-top: 50px;   
   }
 
 }
@@ -127,6 +127,65 @@ export default {
   .about-image {
     margin-left: 60px;
     margin-top: 110px;
+  }
+}
+
+/* Laptop view (1024px to 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .row {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .col-lg-6 {
+    width: 80%; 
+    margin-bottom: 20px; 
+    text-align: center; 
+  }
+
+  .about-image {
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 30px; 
+  }
+
+  .section-title {
+    font-size: 2.8rem; 
+  }
+
+  .section-text {
+    font-size: 1.3rem;
+    max-width: 80%; 
+    margin: 0 auto; 
+  }
+
+  .hero-about {
+    padding: 280px 20px; 
+  }
+}
+
+/* Tablet view (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-image {
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px; 
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .section-text {
+    font-size: 1.3rem;
+  }
+
+  .hero-about {
+    padding: 250px 20px;
   }
 }
 

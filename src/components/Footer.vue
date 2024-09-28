@@ -2,22 +2,16 @@
   <footer class="footer bg-dark text-white">
     <div class="container py-3">
       <p class="mb-4">We accept payment in Euros or below mentioned cards</p>
-      <!-- Payment Cards Icons -->
       <div class="payment-cards mb-4">
         <img src="../assets/diners.png" alt="Card 1" class="payment-card">
-        
       </div>&nbsp;
-
       <div class="row"> 
-        <!-- Contact Information -->
         <div class="col-md-4 mb-4 mb-md-0">
           <h5>Contact Us</h5>
           <p class="footp">Email: pizzeriajupiter@net.hr</p>
           <p class="footp">Phone: 052 214 333</p>
           <p class="footp">Address: Castropola 42, Pula, Croatia, 52100</p>
         </div>
-        
-        <!-- Social Media Links -->
         <div class="col-md-4 mb-4 mb-md-0">
           <h5>Follow Us</h5>
           <ul class="list-unstyled">
@@ -25,8 +19,6 @@
             <li><a href="https://www.instagram.com/jupiterpizzeria/?hl=en">Instagram</a></li>
           </ul>
         </div>
-        
-        <!-- Copyright Notice -->
         <div class="col-md-4">
           <h5>&copy; 2024 Mateo Rumac</h5>
           <p class="footp">All rights reserved.</p>
